@@ -4,3 +4,10 @@
 
 def PrintOutput(input_string):
     print('OUTPUT', input_string)
+
+def LoadFile(filename):
+    with open(filename, 'r') as f:
+        string = f.read().splitlines()
+        mylist = list[string]
+    return mylist
+
